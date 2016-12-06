@@ -1,4 +1,4 @@
-1. Check vm.swappiness on all your nodes
+a. Check vm.swappiness on all your nodes
 
 ```
 $ cat /proc/sys/vm/swappiness
@@ -19,7 +19,7 @@ $ cat /proc/sys/vm/swappiness
 1
 ```
 
-2. Show the mount attributes of all volumes
+b. Show the mount attributes of all volumes
 
 ```
 $ mount
@@ -55,7 +55,7 @@ tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=14973
 ```
 
 
-3. Show the reserve space of any non-root, ext-based volumes
+c. Show the reserve space of any non-root, ext-based volumes
 
 
 ```
@@ -71,7 +71,7 @@ tmpfs            1497312      0   1497312   0% /run/user/1000
 
 Verify again how to check
 
-4. Show that transparent hugepages is disabled
+d. Show that transparent hugepages is disabled
 
 ```
 $ cat /sys/kernel/mm/transparent_hugepage/enabled
@@ -105,7 +105,7 @@ always madvise [never]
 
 
 
-5. Report the network interface attributes
+e. Report the network interface attributes
 
 ```
 $ ip link show
@@ -138,7 +138,7 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
 
 
 
-6. Show forward and reverse host lookups using getent and nslookup
+f. Show forward and reverse host lookups using getent and nslookup
 
 ```
 $ sudo yum install bind-utils
@@ -190,7 +190,7 @@ Hint: Some lines were ellipsized, use -l to show in full.
 ```
 
 
-8. Verify the ntpd service is running
+g. Verify the ntpd service is running
 
 ```
 $ sudo yum install ntp ntpdate ntp-doc
