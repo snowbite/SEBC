@@ -158,6 +158,7 @@ Address: 172.31.13.100
 $ getent hosts ip-172-31-13-100.ap-southeast-1.compute.internal
 172.31.13.100   ip-172-31-13-100.ap-southeast-1.compute.internal
 ```
+g. Verify the ntpd service is running
 
 ```
 $ sudo yum install nscd
@@ -190,7 +191,7 @@ Hint: Some lines were ellipsized, use -l to show in full.
 ```
 
 
-g. Verify the ntpd service is running
+h. Verify the ntpd service is running
 
 ```
 $ sudo yum install ntp ntpdate ntp-doc
